@@ -5,12 +5,10 @@ import './App.css';
 import SearchBox from './components/search-box/search-box.component';
 
 const App = () => {
-  console.log('render');
 
 const [searchField, setSearchField] = useState('');
 const [monsters, setMonsters] = useState([]);
 const [filteredMonsters, setFilteredMonsters] = useState(monsters);
-console.log(searchField)
 
 useEffect(() => {
   fetch('https://jsonplaceholder.typicode.com/users')
